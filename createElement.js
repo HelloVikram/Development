@@ -1,0 +1,14 @@
+const heading=document.createElement('h3');
+const headingtext=document.createTextNode('Buy high quality organic fruits online');
+heading.appendChild(headingtext);
+const header=document.querySelector('#header');
+header.appendChild(heading);
+heading.style.fontStyle='italic';
+const para=document.createElement('p');
+const paratext=document.createTextNode('Total fruits:4');
+para.appendChild(paratext);
+const ul=document.querySelector('.fruits');
+const div=document.querySelectorAll('div');
+const seconddiv=div[1];
+seconddiv.insertBefore(para,ul);
+para.id='fruits-total';
